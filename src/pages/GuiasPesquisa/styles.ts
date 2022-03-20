@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 
+
 export const Container = styled.View`
 
     background: #FF4600;
@@ -31,7 +32,7 @@ export const ContainerTitle = styled.View`
     align-items: center;
     text-align: center;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
 `
 
@@ -47,61 +48,57 @@ export const Title = styled.Text`
 
 `
 
-export const ImageGuia = styled.Image`
-
-    width: 100%;
-    height: 40% ;
-
-`
-
-export const SubTitle = styled.Text`
-
-    font-size: 30px;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-align: center;
-    margin: 10px;
-
-
-`
-
 export const Texto = styled.Text`
 
+    font-size: 20px;
     font-weight: bold;
-    font-size: 15px;
     color: #FFFFFF;
     text-align: center;
-    margin: 5px;
 
-`
-export const ContainerRow = styled.View`
-
-    flex-direction: row;
-    align-items: center;
 
 `
 
-export const ImageStatus = styled.Image`
+export const ContainerInput = styled.View`
 
     align-items: center;
-    margin-left: 10px;
+    width: 250px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    margin: 35px;
+
+`
+
+export const Input = styled.TextInput`
+
+
+    border: none;
+    background: #FFFFFF;
+    margin: 15px;
+    width: 150px;
+    
+
+`
+
+export const ImageSelect = styled.Image`
+
+    margin: 35px;
+
 
 `
 
 export const ContainerButton = styled.View`
 
     align-items: center;
-    margin: 10px;
 
 `
 
-export const MessageButton = styled.TouchableOpacity`
+export const ButtonSearch = styled.TouchableOpacity`
 
     position: absolute;
     background: #FFFFFF;
     border-radius: 20px;
     padding: 20px;
-    width: 275px;
+    width: 250px;
     align-self: center;
     align-items: center;
     justify-content: center;

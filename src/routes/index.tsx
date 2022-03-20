@@ -6,9 +6,10 @@ import SignUp from "../pages/SignUp";
 import Home from "../pages/Home";
 import Menu from "../pages/Menu";
 import UserProfile from "../pages/UserProfile";
-import Guias from "../pages/Guias";
+import GuiasPesquisa from "../pages/GuiasPesquisa";
 import Equipamentos from "../pages/Equipamentos";
 import Configurações from "../pages/Configurações";
+import Guias from "../pages/Guias";
 
 const Stack = createNativeStackNavigator();
 
@@ -46,8 +47,8 @@ export default function Routes(){
                 options={{ headerShown: false}}
             />
                         <Stack.Screen
-                name="Guias"
-                component={Guias}
+                name="GuiasPesquisa"
+                component={GuiasPesquisa}
                 options={{ headerShown: false}}
             />
                         <Stack.Screen
@@ -58,6 +59,11 @@ export default function Routes(){
             <Stack.Screen
                 name="Configurações"
                 component={Configurações}
+                options={{ headerShown: false}}
+            />
+            <Stack.Screen
+                name="Guias"
+                component={Guias}
                 options={{ headerShown: false}}
             />
         </Stack.Navigator>

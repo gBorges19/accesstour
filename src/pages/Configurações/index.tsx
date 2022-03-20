@@ -6,7 +6,7 @@ import * as C from './styles';
 import { useNavigation } from '@react-navigation/native';
 
 
-export default function Home(){
+export default function Configurações(){
 
     type Nav = {
         navigate: (value: string) => void;

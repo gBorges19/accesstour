@@ -1,12 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 import * as U from './styles';
 
 import { useNavigation } from '@react-navigation/native';
 
 
-export default function Home(){
+export default function UserProfile(){
 
     type Nav = {
         navigate: (value: string) => void;
@@ -17,6 +17,13 @@ export default function Home(){
     return(
         
         <U.Container>
+            
+            <U.BackButton onPress={() => navigation.navigate('Menu')}>
+                <U.BackImage
+                    source={require('../../assets/backbutton.png')}
+                />
+            </U.BackButton>
+
             <U.ContainerImagem>
                 <Image
                     source={require('../../assets/imagem_perfil.png')}

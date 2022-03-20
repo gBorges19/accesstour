@@ -1,6 +1,7 @@
 import styled from 'styled-components/native';
 
 
+
 export const Container = styled.View`
 
     background: #FF4600;
@@ -9,9 +10,24 @@ export const Container = styled.View`
 
 `
 
+export const BackButton = styled.TouchableOpacity`
+
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+
+`
+
+export const BackImage = styled.Image`
+
+    width: 50px;
+    height: 50px;
+
+
+`
+
 export const ContainerImagem = styled.View`
 
-    margin-top: 30px;
 
 
 `

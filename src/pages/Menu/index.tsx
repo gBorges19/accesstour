@@ -21,6 +21,13 @@ export default function Menu(){
             <M.ContainerTitle>
                 <M.Title>MENU</M.Title>
             </M.ContainerTitle>
+
+            <M.ContainerButton>
+                <M.MenuButtons>
+                    <M.ButtonText onPress={() => navigation.navigate('Home')}>MAPA</M.ButtonText>
+                </M.MenuButtons>
+            </M.ContainerButton>
+
             <M.ContainerButton>
                 <M.MenuButtons>
                     <M.ButtonText onPress={() => navigation.navigate('UserProfile')}>PERFIL</M.ButtonText>
@@ -29,7 +36,7 @@ export default function Menu(){
 
             <M.ContainerButton>
                 <M.MenuButtons>
-                    <M.ButtonText onPress={() => navigation.navigate('Guias')}>GUIAS</M.ButtonText>
+                    <M.ButtonText onPress={() => navigation.navigate('GuiasPesquisa')}>GUIAS</M.ButtonText>
                 </M.MenuButtons>
             </M.ContainerButton>
 
